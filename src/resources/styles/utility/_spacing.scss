@@ -1,0 +1,10 @@
+/** UTILITY: Spacing **/
+$spacing-types: 'margin', 'padding';
+
+@each $type in $spacing-types {
+    /* #{$type} */
+    $map: spacing($type, $spacing);
+    @each $spacing-class, $space in $map {
+        #{$spacing-class} { #{$type}: unquote($space) };
+    }
+}
