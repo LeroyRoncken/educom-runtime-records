@@ -1,18 +1,18 @@
 import "./resources/styles/main.css"
 import { useDatabase } from "./hooks"
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
-import Logo from './components/atoms/Logo'
+import Logo from "./components/atoms/Logo"
 
 const App = () => {
 
-  const [data, isLoaded] = useDatabase('records')
+  const [data, isLoaded] = useDatabase("records")
 
   return(
     <Container fluid>
@@ -38,7 +38,4 @@ const App = () => {
   )
 
 }
-export default App;
-
-
-
+export default App

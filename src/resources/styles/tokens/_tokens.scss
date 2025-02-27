@@ -1,12 +1,24 @@
 $tokens: (
   unit: rem,
   colors: ((
-    type: base,
-    color: #000,
-    shades: (50)
+    type: primary,
+    color: #733939,
+    shades: (25, 50)
+  ), (
+    type: primary-var,
+    color: #D96B52,
+    shades: (25, 50)
+  ), (
+    type: secondary-var,
+    color: #F2A35E,
+    shades: (25, 50)
+  ), (
+    type: secondary,
+    color: #F2CA80,
+    shades: (25, 50)
   ), (
     type: highlight,
-    color: #e84e0f,
+    color: #06ADBF,
     shades: (25, 50)
   )),
   fonts: ((
