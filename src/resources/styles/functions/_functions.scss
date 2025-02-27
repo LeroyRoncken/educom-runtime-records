@@ -76,8 +76,8 @@ $types: "light", "dark";
   $map: ();
   
   @each $key, $value in $sizing {
-      $sizing-class: '.' + $type + '-' + $key;
-      $size: $value + $unit;
+      $sizing-class: "." + $type + "-" + $key;
+      $size: "var(--" + $type + "-" + $key + ")";
       $base: ($sizing-class: $size);
       $map: map-merge($map, $base);
   }
@@ -89,8 +89,8 @@ $types: "light", "dark";
   $map: ();
   
   @each $key, $value in $spacing {
-      $spacing-class: '.' + $type + '-' + $key;
-      $space: $value + $unit;
+      $spacing-class: "." + $type + "-" + $key;
+      $space: "var(--" + $type + "-" + $key + ")";
       $base: ($spacing-class: $space);
       $map: map-merge($map, $base);
   }

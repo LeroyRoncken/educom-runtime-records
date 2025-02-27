@@ -166,6 +166,24 @@ select {
   --main-text-bold: "main-text-bold";
   --menu-items: "menu-items";
   --main-text-link: "main-text-link";
+  /** SIZING **/
+  /*! height */
+  --height-small: 1.2rem;
+  --height-medium: 2.4rem;
+  --height-large: 4rem;
+  /*! width */
+  --width-small: 1.2rem;
+  --width-medium: 2.4rem;
+  --width-large: 4rem;
+  /** SPACING **/
+  /*! margin */
+  --margin-small: 1rem;
+  --margin-medium: 2rem;
+  --margin-large: 3rem;
+  /*! padding */
+  --padding-small: 1rem;
+  --padding-medium: 2rem;
+  --padding-large: 3rem;
 }
 
 /** UTILITY: Colors **/
@@ -384,55 +402,55 @@ select {
 /** UTILITY: Sizing **/
 /* height */
 .height-small {
-  height: 1.2rem;
+  height: var(--height-small);
 }
 
 .height-medium {
-  height: 2.4rem;
+  height: var(--height-medium);
 }
 
 .height-large {
-  height: 4rem;
+  height: var(--height-large);
 }
 
 /* width */
 .width-small {
-  width: 1.2rem;
+  width: var(--width-small);
 }
 
 .width-medium {
-  width: 2.4rem;
+  width: var(--width-medium);
 }
 
 .width-large {
-  width: 4rem;
+  width: var(--width-large);
 }
 
 /** UTILITY: Spacing **/
 /* margin */
 .margin-small {
-  margin: 1rem;
+  margin: var(--margin-small);
 }
 
 .margin-medium {
-  margin: 2rem;
+  margin: var(--margin-medium);
 }
 
 .margin-large {
-  margin: 3rem;
+  margin: var(--margin-large);
 }
 
 /* padding */
 .padding-small {
-  padding: 1rem;
+  padding: var(--padding-small);
 }
 
 .padding-medium {
-  padding: 2rem;
+  padding: var(--padding-medium);
 }
 
 .padding-large {
-  padding: 3rem;
+  padding: var(--padding-large);
 }
 
 .h1 {
@@ -472,13 +490,13 @@ select {
 }
 
 .Logo .small {
-  height: 1.2rem;
+  height: var(--height-small);
 }
 .Logo .medium {
-  height: 2.4rem;
+  height: var(--height-medium);
 }
 .Logo .large {
-  height: 4rem;
+  height: var(--height-large);
 }
 
 /*! Molecules */

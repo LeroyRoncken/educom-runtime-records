@@ -2,15 +2,15 @@
 .Logo {
 
   .small {
-    height: 1.2rem;
+    height: var(--height-small);
   }
 
   .medium {
-      height: 2.4rem;
+      height: var(--height-medium);
   }
 
   .large {
-      height: 4rem;
+      height: var(--height-large);
   }
 
 }

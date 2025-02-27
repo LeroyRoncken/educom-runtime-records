@@ -20,4 +20,20 @@
     //--#{$type}: '#{$type}';
     --#{$type}: '#{$q}';
   }
+
+  /** SIZING **/
+  @each $type in $sizing-types {
+      /*! #{$type} */
+      @each $key, $value in $sizing {
+        --#{$type}-#{$key}: #{$value}#{$unit};
+      }
+  }
+
+  /** SPACING **/  
+  @each $type in $spacing-types {
+    /*! #{$type} */
+    @each $key, $value in $spacing {
+      --#{$type}-#{$key}: #{$value}#{$unit};
+    }
+  }
 }

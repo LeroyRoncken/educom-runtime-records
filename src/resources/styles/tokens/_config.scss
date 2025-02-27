@@ -7,3 +7,6 @@ $spacing: map-get($tokens, 'spacing');
 
 $color-types: "bg" "Background Color" "background-color",
               "fg" "Foreground Color" "color";
+
+$sizing-types: "height", "width";
+$spacing-types: "margin", "padding";

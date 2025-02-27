@@ -1,6 +1,4 @@
 /** UTILITY: Spacing **/
-$spacing-types: 'margin', 'padding';
-
 @each $type in $spacing-types {
     /* #{$type} */
     $map: spacing($type, $spacing);
