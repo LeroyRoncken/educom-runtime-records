@@ -1,6 +1,6 @@
 /** UTILITY: Spacing **/
 @each $type in $spacing-types {
-    /* #{$type} */
+    /*! #{$type} */
     $map: spacing($type, $spacing);
     @each $spacing-class, $space in $map {
         #{$spacing-class} { #{$type}: unquote($space) };

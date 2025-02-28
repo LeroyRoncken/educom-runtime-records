@@ -1,6 +1,6 @@
 /** UTILITY: Sizing **/
 @each $type in $sizing-types {
-    /* #{$type} */
+    /*! #{$type} */
     $map: sizing($type, $sizing);
     @each $sizing-class, $size in $map {
         #{$sizing-class} { #{$type}: unquote($size) };
