@@ -399,8 +399,33 @@ select {
   color: var(--fg-highlight-dark-50);
 }
 
+/** UTILITY: Fonts **/
+/*! main-text-regular */
+.main-text-regular-20 {
+  font-family: "main-text-regular";
+  font-size: 20px;
+}
+
+/*! main-text-bold */
+.main-text-bold-20 {
+  font-family: "main-text-bold";
+  font-size: 20px;
+}
+
+/*! menu-items */
+.menu-items-120 {
+  font-family: "menu-items";
+  font-size: 120px;
+}
+
+/*! main-text-link */
+.main-text-link-16 {
+  font-family: "main-text-link";
+  font-size: 16px;
+}
+
 /** UTILITY: Sizing **/
-/* height */
+/*! height */
 .height-small {
   height: var(--height-small);
 }
@@ -413,7 +438,7 @@ select {
   height: var(--height-large);
 }
 
-/* width */
+/*! width */
 .width-small {
   width: var(--width-small);
 }
@@ -427,7 +452,7 @@ select {
 }
 
 /** UTILITY: Spacing **/
-/* margin */
+/*! margin */
 .margin-small {
   margin: var(--margin-small);
 }
@@ -440,7 +465,7 @@ select {
   margin: var(--margin-large);
 }
 
-/* padding */
+/*! padding */
 .padding-small {
   padding: var(--padding-small);
 }
@@ -453,6 +478,7 @@ select {
   padding: var(--padding-large);
 }
 
+/** HEADINGS **/
 .h1 {
   font-family: "heading";
   font-size: 5.625rem;

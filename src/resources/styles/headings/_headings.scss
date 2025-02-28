@@ -1,3 +1,4 @@
+/** HEADINGS **/
 @each $variant in map-get($headings, "variant") {
  @each $t, $s in $variant {
     .#{$t} {

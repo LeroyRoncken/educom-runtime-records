@@ -1,0 +1,13 @@
+/** UTILITY: Fonts **/
+@each $entry in $fonts {
+    $type: map-get($entry, 'type');
+    /*! #{$type} */
+
+    $map: fontSizes($type, $entry);
+    @each $font-class, $font-size in $map {
+        #{$font-class} {
+            font-family: quote($type);
+            font-size: unquote($font-size);
+        };
+    }
+}

@@ -72,6 +72,21 @@ $types: "light", "dark";
   @return($e);
 }
 
+@function fontSizes($type, $entry) {
+  $type: map-get($entry, 'type');
+  $sizes: map-get($entry, 'sizes');
+
+  $map: ();
+
+  @each $size in $sizes {
+      $font-class: '.' + $type + '-' + $size;
+      $font-size: $size + 'px';
+      $base: ($font-class: $font-size);
+      $map: map-merge($map, $base);
+  }
+  @return ($map);
+}
+
 @function sizing($type, $sizing) {
   $map: ();
   
